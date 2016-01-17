@@ -4,21 +4,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Basaltic Studio</title>
+
+    <script src="https://use.typekit.net/bwj4lyn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <style>
       body {
         background-color:  #232323;
       }
 
-      #logo {
-        position: fixed;
-        top: 50%;
-        left: 50%;
+      #container{
+        margin: 5em auto 0;
+      }
 
-        transform: translate(-50%, -50%);
+      .center {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .fb-page {
+        width: 512px;
+      }
+
+      .fb-page.center.center.center{
+        display: block;
+        margin-bottom: 5em;
+      }
+
+      .typekit {
+        font-family: "alternate-gothic-no-1-d", sans-serif;
+      }
+
+      .message {
+        font-size: 2em;
+        color: white;
+
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <img src="logo.png" id="logo" width="512" height="512" />
-  </body>
+    <div id="container">
+      <img src="logo.png" id="logo" class="center" width="512" height="512" />
+      <p class="typekit message">[ Official Website is Coming Soon... ]</p>
+      <div class="fb-page center" data-width="512" data-href="https://www.facebook.com/Basaltic.Studio/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Basaltic.Studio/"><a href="https://www.facebook.com/Basaltic.Studio/">Basaltic Studio</a></blockquote></div></div>
+    </div>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1687482531531755";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</body>
 </html>
